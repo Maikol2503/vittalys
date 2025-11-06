@@ -1,0 +1,13 @@
+/* You can add global styles to this file, and also import other style files */
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: "Montserrat", sans-serif;
+}
+
+:root{
+    --color-azul-base:#202E77;
+    --color-rosa-base:#C93A68;
+}

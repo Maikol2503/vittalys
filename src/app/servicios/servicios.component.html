@@ -1,0 +1,77 @@
+<div class="servicio-section" *ngIf="servicio">
+  <div class="servicio-content">
+    
+    <!-- COLUMNA DE TEXTO -->
+    <div class="servicio-texto">
+      <h4 class="etiqueta">{{ servicio.titulo }}</h4>
+      <h1 class="titulo">{{ servicio.subtitulo }}</h1>
+      
+      <p class="descripcion" *ngIf="servicio.descripcion">
+        {{ servicio.descripcion }}
+      </p>
+
+      <p class="resaltado" *ngIf="servicio.precio">
+        Desde <strong>{{ servicio.precio }}</strong>
+      </p>
+
+      <!-- SUBSERVICIOS -->
+      <div class="subservicios" *ngIf="servicio.servicios">
+        <div *ngFor="let sub of servicio.servicios" class="subservicio-card">
+          <h3>{{ sub.titulo }}</h3>
+          <p class="subtitulo">{{ sub.subtitulo }}</p>
+
+          <ul class="marcadores" *ngIf="sub.marcadores?.length">
+            <li *ngFor="let m of sub.marcadores">
+              <i class="bi bi-check-circle-fill"></i> {{ m }}
+            </li>
+          </ul>
+
+          <div class="info-extra">
+            <span><strong>Tiempo de entrega:</strong> {{ sub.tiempoEntrega }}</span>
+            <span><strong>Precio:</strong> {{ sub.precio }}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- COLUMNA DE IMAGEN -->
+    <div class="servicio-imagen">
+      <img [src]="servicio.urlImage" alt="{{ servicio.titulo }}" [attr.view-transition-name]="servicio.type"> 
+      <a href="#contacto" class="btn-contacto">Solicitar información</a>
+    </div>
+  </div>
+
+  <!-- FORMULARIO DE CONTACTO -->
+  <div id="contacto" class="formulario-contacto">
+    <h2>Solicita información sobre este servicio</h2>
+    <p>Déjanos tus datos y te contactaremos lo antes posible.</p>
+
+    <form (submit)="onSubmit($event)">
+      <div class="form-grid">
+        <div class="form-group">
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" name="nombre" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Correo electrónico</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+          <label for="telefono">Teléfono</label>
+          <input type="tel" id="telefono" name="telefono">
+        </div>
+
+        <div class="form-group">
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+        </div>
+      </div>
+
+      <button type="submit" class="btn-enviar">
+        Enviar mensaje
+      </button>
+    </form>
+  </div>
+</div>

@@ -1,0 +1,121 @@
+.body-nav{
+    background-color: white;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    width: 100%;
+}
+
+.nav-mobile{
+    display: none;
+}
+
+.body-nav .content-body-nav{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.body-nav .content-body-nav > div {
+  flex: 1; /* 👈 hace que cada div ocupe el mismo espacio */
+}
+
+
+.body-nav .content-body-nav .logo img{
+ width: 180px;
+}
+
+.body-nav .content-body-nav .options ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.body-nav .content-body-nav .options ul li{
+    cursor: pointer;
+}
+
+.body-nav .content-body-nav .contact{
+    display: flex;
+    justify-content: end;
+    width: 100%;
+}
+
+.body-nav .content-body-nav .contact button{
+    padding: 15px 35px;
+    background-color: var(--color-rosa-base);
+    border-radius: 25px;
+    border: none;
+    color: white;
+}
+
+
+
+
+
+
+/* Media Queries para pantallas medianas */
+@media (max-width: 1024px) {
+    .body-nav .content-body-nav {
+        grid-template-columns: 1fr 1fr; /* logo + resto */
+        gap: 10px;
+        align-items: center;
+    }
+
+    .body-nav .content-body-nav .logo img {
+        width: 150px;
+    }
+
+    .body-nav .content-body-nav .options ul {
+        gap: 8px;
+    }
+
+    .body-nav .content-body-nav .contact button {
+        padding: 12px 25px;
+        font-size: 14px;
+    }
+}
+
+/* Pantallas pequeñas (tablets y móviles) */
+@media (max-width: 768px) {
+    .body-nav .nav-mobile{
+        display: block;
+    }
+
+    .body-nav .content-body-nav {
+        display: none;
+    }
+
+    .body-nav .nav-mobile{
+        display: flex;
+        justify-content: space-between;
+        padding: 0px 20px 0 10px;
+    }
+
+    .body-nav .nav-mobile .logo img{
+        width: 120px;
+    }
+
+    .body-nav .nav-mobile .options ul{
+        display: flex;
+        height: 100%;
+        align-items: center;
+        gap: 30px;
+    }
+
+
+}
+
+/* Pantallas muy pequeñas (móviles) */
+@media (max-width: 480px) {
+    .body-nav .content-body-nav {
+        gap: 10px;
+        padding: 5px;
+    }
+
+    
+}
+
+

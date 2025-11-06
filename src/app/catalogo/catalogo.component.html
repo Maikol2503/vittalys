@@ -1,0 +1,20 @@
+<div class="section-catalogo">
+    <div class="header-section-catalogo">
+        <h2 class="tittle-section-catalogo">Catalogo de servicos</h2>
+    </div>
+    <div class="container-section-catalogo">
+        <div class="catalogo">
+            <ul class="lista-catalogo">
+                <li class="item" *ngFor="let data of dataCatalogo" [routerLink]="data.url">
+                    <div class="image">
+                        <img  [src]="data.urlImage" alt="" [attr.view-transition-name]="data.type">
+                    </div>
+                    <div class="info">
+                        <h1 class="title">{{data.titulo}}</h1>
+                        <p class="description">{{data.subtitulo}}</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

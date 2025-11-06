@@ -1,0 +1,57 @@
+<section class="contact-section">
+  <div class="contact-container">
+
+    <!-- COLUMNA IZQUIERDA -->
+    <div class="contact-left">
+      <p class="small-text">ESTAMOS AQUÍ PARA AYUDARTE</p>
+      <h2><strong>Consulta</strong> tus Necesidades Médicas o Diagnósticas</h2>
+      <p class="description">
+        ¿Buscas un análisis personalizado o deseas más información sobre nuestros servicios?
+        Completa el formulario y uno de nuestros especialistas te contactará.
+      </p>
+
+      <div class="contact-info">
+        <div class="info-item">
+          <i class="fa-solid fa-envelope"></i>
+          <span>vittalyslab&#64;gmail.com</span>
+        </div>
+        <div class="info-item">
+          <i class="fa-solid fa-phone"></i>
+          <span>+34 673 114 957</span>
+        </div>
+        <div class="info-item">
+          <i class="fa-solid fa-location-dot"></i>
+          <span>Calle Mercurio 50, 28032 Madrid</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- COLUMNA DERECHA -->
+    <div class="contact-right">
+      <form (submit)="onSubmit($event)">
+        <div class="form-group">
+          <input type="text" placeholder="Nombre completo" required>
+        </div>
+        <div class="form-group">
+          <input type="email" placeholder="Correo electrónico" required>
+        </div>
+        <div class="form-group">
+          <select required>
+            <option value="">Selecciona un servicio</option>
+            <option>Vigilancia Metabólica</option>
+            <option>Perfiles Cardiovasculares</option>
+            <option>Perfiles Inflamatorios</option>
+            <option>Seguimiento Crónico</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <textarea rows="4" placeholder="Escribe tu mensaje..."></textarea>
+        </div>
+        <button type="submit" class="btn-submit">
+          <i class="fa-solid fa-paper-plane"></i> Enviar Mensaje
+        </button>
+      </form>
+    </div>
+
+  </div>
+</section>

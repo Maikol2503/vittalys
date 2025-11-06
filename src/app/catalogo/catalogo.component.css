@@ -1,0 +1,210 @@
+.section-catalogo{
+    background-color: rgb(245, 245, 246);
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.section-catalogo .header-section-catalogo{
+    max-width: 1100px;
+    margin: 50px auto 0px auto;
+}
+
+.section-catalogo .header-section-catalogo .tittle-section-catalogo{
+    font-size: 30px;
+}
+
+
+.section-catalogo .container-section-catalogo{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 10px 0px;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.section-catalogo .container-section-catalogo .header-section-catalogo{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-catalogo .container-section-catalogo .header-section-catalogo h4{
+    font-size: 20px;
+}
+
+.section-catalogo .container-section-catalogo .header-section-catalogo h1{
+    font-size: 40px;
+}
+
+.section-catalogo .container-section-catalogo .catalogo .lista-catalogo{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.section-catalogo .container-section-catalogo .catalogo .lista-catalogo .item{
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: flex-start;
+ background-color: rgb(255, 255, 255);
+ padding: 20px 20px 40px 20px;
+ transition: .2s;
+ border-radius: 15px;
+ cursor: pointer;
+
+}
+
+.section-catalogo .container-section-catalogo .catalogo .lista-catalogo .item:hover{
+scale: 1.03;
+box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+
+.section-catalogo .container-section-catalogo .catalogo .lista-catalogo .item img{
+    width: 100%;
+    max-height: 250px;
+}
+
+
+.section-catalogo .container-section-catalogo .catalogo .lista-catalogo .item  .info{
+    text-align: center;
+}
+
+.section-catalogo .container-section-catalogo .catalogo .lista-catalogo .item  .info .title{
+ font-size: 20px;
+}
+
+.section-catalogo .container-section-catalogo .catalogo .lista-catalogo .item  .info .description{
+ font-size: 14px;
+ margin-top: 10px;
+ color: rgb(113, 113, 113);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive para móviles */
+@media (max-width: 768px) {
+
+    .section-catalogo{
+        padding: 90px 15px 30px;
+    }
+
+
+
+    /* HEADER */
+    .section-header {
+        min-width: 100%;
+        padding: 15px;
+    }
+
+    .section-header .header-container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 15px 20px 15px;
+        min-height: auto;
+    }
+
+    .section-header .header-container .info {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .section-header .header-container .info .header-text h3 {
+        font-size: 20px;
+    }
+
+    .section-header .header-container .info .header-text h1 {
+        font-size: 36px;
+    }
+
+    .section-header .header-container .info .header-text p {
+        font-size: 16px;
+    }
+
+    .section-header .header-container .info .buttom-actions {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .section-header .header-container .image img {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+    }
+
+    /* CATALOGO */
+    .section-catalogo .container-section-catalogo{
+        padding: 0px;
+    }
+
+    .section-catalogo .header-section-catalogo{
+        margin: 0px auto 0px auto;
+    }
+
+    .section-catalogo .header-section-catalogo .tittle-section-catalogo{
+        font-size: 25px;
+    }
+    .section-catalogo .container-section-catalogo .catalogo .lista-catalogo {
+        grid-template-columns: 1fr; /* Una columna */
+        gap: 20px;
+        margin-top: 30px;
+    }
+
+    .section-catalogo .container-section-catalogo .catalogo .lista-catalogo .item img {
+        max-height: 200px;
+    }
+
+    .section-catalogo .container-section-catalogo .catalogo .lista-catalogo .item .info .title {
+        font-size: 18px;
+    }
+
+    .section-catalogo .container-section-catalogo .catalogo .lista-catalogo .item .info .description {
+        font-size: 13px;
+    }
+
+    .section-catalogo .ver-mas {
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    /* MAPA */
+    .section-mapa {
+        height: 400px;
+    }
+}

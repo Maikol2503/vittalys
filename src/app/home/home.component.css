@@ -1,0 +1,374 @@
+.section-header{
+    display: flex;
+    align-items: flex-start;
+    min-width: 100vw;
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.499), rgba(0, 0, 0, 0.504)), url(https://i.imgur.com/brGFRfu.jpeg); */
+}
+
+.section-header .header-container{
+    width: 100%;
+    max-width: 1100px;
+    padding: 70px 20px 20px 20px;
+    /* height: 100%; */
+    min-height: 95vh;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.section-header .header-container .info .header-text h3{
+ font-size: 28px;
+ color: rgb(42, 42, 42);
+}
+
+.section-header .header-container .info .header-text h1{
+ font-size: 58px;
+ color: rgb(52, 52, 52);
+}
+
+.section-header .header-container .info .header-text p{
+ font-size: 18px;
+ color: rgb(108, 108, 108);
+}
+
+.section-header .header-container .info .buttom-actions{
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.section-header .header-container .info .buttom-actions .btn-contact{
+    padding: 10px 25px;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight:600 ;
+    color: white;
+    background-color: var(--color-azul-base);
+    box-shadow: rgba(255, 255, 255, 0.499) 0px 8px 24px;
+
+}
+
+.section-header .header-container .info .buttom-actions .btn-horarios{
+    padding: 10px 25px;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight:600 ;
+    color: white;
+    background-color: var(--color-rosa-base);
+    box-shadow: rgba(255, 255, 255, 0.588) 0px 8px 24px;
+
+}
+
+.section-header .header-container .image img{
+    width: 550px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.section-catalogo{
+    background-color: rgb(250, 250, 251);
+    padding-bottom: 150px;
+    padding-top: 50px;
+}
+
+
+
+.section-catalogo .container-section-catalogo{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0px;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.section-catalogo .container-section-catalogo .header-section-catalogo{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-catalogo .container-section-catalogo .header-section-catalogo h4{
+    font-size: 20px;
+}
+
+.section-catalogo .container-section-catalogo .header-section-catalogo h1{
+    font-size: 40px;
+}
+
+.section-catalogo .container-section-catalogo .catalogo .lista-catalogo{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.section-catalogo .container-section-catalogo .catalogo .lista-catalogo .item{
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: flex-start;
+ background-color: rgb(255, 255, 255);
+ padding: 20px 20px 40px 20px;
+ transition: .2s;
+ border-radius: 15px;
+ cursor: pointer;
+ box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+}
+
+.section-catalogo .container-section-catalogo .catalogo .lista-catalogo .item:hover{
+scale: 1.03;
+
+}
+
+
+.section-catalogo .container-section-catalogo .catalogo .lista-catalogo .item img{
+    width: 100%;
+    max-height: 250px;
+}
+
+
+.section-catalogo .container-section-catalogo .catalogo .lista-catalogo .item  .info{
+    text-align: center;
+}
+
+.section-catalogo .container-section-catalogo .catalogo .lista-catalogo .item  .info .title{
+ font-size: 20px;
+}
+
+.section-catalogo .container-section-catalogo .catalogo .lista-catalogo .item  .info .description{
+ font-size: 14px;
+ margin-top: 10px;
+ color: rgb(113, 113, 113);
+}
+
+
+
+
+.section-catalogo  .ver-mas{
+    margin: 40px auto 0px auto;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    max-width: 1100px;
+}
+
+.section-catalogo  .ver-mas button{
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+    color: var(--color-azul-base);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.section-mapa{
+    max-height: 100vh;
+    width: 100vw;
+
+    /* Dale una altura fija para asegurar el espacio */
+    height: 600px; 
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Media Queries para pantallas pequeñas (mobile) */
+@media (max-width: 1024px) {
+    .section-header .header-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 50px 20px 20px 20px;
+        min-height: auto;
+        text-align: center;
+    }
+
+    .section-header .header-container .info .header-text h3 {
+        font-size: 24px;
+    }
+
+    .section-header .header-container .info .header-text h1 {
+        font-size: 48px;
+    }
+
+    .section-header .header-container .info .header-text p {
+        font-size: 16px;
+    }
+
+    .section-header .header-container .image img {
+        width: 100%;
+        max-width: 400px;
+        margin-top: 30px;
+    }
+
+    .section-header .header-container .info .buttom-actions {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .section-catalogo .container-section-catalogo .catalogo .lista-catalogo {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+}
+
+/* Media Queries para pantallas muy pequeñas (tablet y mobile) */
+@media (max-width: 768px) {
+    .section-header .header-container .info .header-text h3 {
+        font-size: 20px;
+    }
+
+    .section-header .header-container .info .header-text h1 {
+        font-size: 36px;
+    }
+
+    .section-header .header-container .info .header-text p {
+        font-size: 14px;
+    }
+
+    .section-header .header-container .image img {
+        max-width: 300px;
+    }
+
+    .section-catalogo .container-section-catalogo .catalogo .lista-catalogo {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .section-catalogo .container-section-catalogo .header-section-catalogo h1 {
+        font-size: 32px;
+    }
+
+    .section-catalogo .container-section-catalogo .header-section-catalogo h4 {
+        font-size: 18px;
+    }
+}
+
+/* Ajustes para móviles ultra pequeños */
+@media (max-width: 480px) {
+    .section-header .header-container {
+        padding: 100px 15px 15px 15px;
+    }
+
+    .section-header .header-container .info .header-text h1 {
+        font-size: 28px;
+    }
+
+    .section-header .header-container .info .header-text h3 {
+        font-size: 18px;
+    }
+
+    .section-header .header-container .info .header-text p {
+        font-size: 13px;
+    }
+
+    .section-header .header-container .image img {
+        max-width: 100%;
+    }
+
+    .section-header .header-container .info .buttom-actions .btn-horarios {
+        display: none;
+    }
+
+    .section-catalogo {
+        padding: 15px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        margin-top: 25px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

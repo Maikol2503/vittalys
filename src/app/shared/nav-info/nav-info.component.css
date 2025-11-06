@@ -1,0 +1,30 @@
+.body-nav{
+    background-color: var(--color-azul-base);
+    
+    gap: 20px;
+    padding: 10px;
+}
+
+.body-nav .body-nav-list{
+ display: flex;
+}
+
+.body-nav .body-nav-list li{
+ display: flex;
+ align-items: center;
+ gap: 5px;
+ font-size: 13px;
+ color: white;
+ font-weight: 600;
+ border-right: 1px solid white; /* <-- agrega un borde blanco */
+  padding: 0px 10px 0px 10px;
+}
+
+.body-nav .body-nav-list li:last-child {
+  border-right: none;
+}
+
+.body-nav .body-nav-list li a{
+ color: rgba(255, 255, 255, 0.827);
+  font-size: 13px;
+}
